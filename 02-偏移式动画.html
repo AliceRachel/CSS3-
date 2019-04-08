@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        li{
+            list-style: none;
+            width: 160px;
+            height: 240px;
+            background-color: yellow;
+            float: left;
+            margin-right: 20px;
+        }
+        /*li{*/
+            /*transition: transform 1s,width 1s,height 1s;*/
+        /*}*/
+        /*li:hover{*/
+            /*transform: translate(10px,10px);*/
+            /*width: 200px;*/
+            /*height: 280px;*/
+        /*}*/
+        /*上边在鼠标滑过的时候会左边的li挤到右边的，所以我们可以写下面*/
+        /*li{*/
+            /*transition: transform 1s,width 1s,height 1s;*/
+        /*}*/
+        /*li:hover{*/
+            /*width: 200px;*/
+            /*height: 280px;*/
+        /*}*/
+        /*只是左右移动*/
+        /*li{*/
+            /*transition: transform 1s;*/
+        /*}*/
+        /*li:hover{*/
+            /*transform: translate(10px,10px);*/
+        /*}*/
+        /*只是向下移动*/
+        /*li{*/
+            /*transition: transform 1s;*/
+        /*}*/
+        /*li:hover{*/
+            /*transform: translate(0px,10px);*/
+        /*}*/
+        /*鼠标滑过改变背景颜色*/
+        li{
+            transition: transform 1s,background 1s;
+        }
+        li:hover{
+            transform: translate(0px,10px);
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

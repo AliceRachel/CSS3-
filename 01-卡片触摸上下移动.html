@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        li{
+            list-style: none;
+            width: 160px;
+            height: 240px;
+            background-color: yellow;
+            float: left;
+            margin-right: 20px;
+        }
+        /*li增加css3样式*/
+        li{
+            /*变形2s*/
+            transition: transform 2s;
+        }
+        li:hover{
+            /*向上移动x轴(右正），y轴（向下正）*/
+            transform: translate(0px,-10px);
+            -ms-transform: translate(0,-10px);
+            -webkit-transform: translate(0,-10px);
+            -o-transform: translate(0,-10px);
+            -moz-transform: translate(0,-10px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

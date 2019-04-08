@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        li{
+            list-style: none;
+            width: 160px;
+            height: 240px;
+            background-color: yellow;
+            float: left;
+            margin-right: 20px;
+        }
+        /*自定义*/
+        @keyframes myself {
+            /*动画效果从from到哪to*/
+            from{
+                background-color: purple;
+            }
+            to{
+                background-color: #fff;
+                width: 200px;
+            }
+        }
+        li:hover{
+            /*调用定义的函数名的函数几秒*/
+            /*动画animation*/
+            animation: myself 1s;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

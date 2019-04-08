@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <style type="text/css">
+        li{
+            list-style: none;
+            width: 160px;
+            height: 240px;
+            background-color: yellow;
+            float: left;
+            margin-right: 20px;
+        }
+        .donghua{
+            animation:myself 3s;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<script>
+    // 写jQuery的格式。如果是div有class则$(".all")表示类名是all的标签
+    $(function () {
+        $("li").click(function () {
+            //实现点击后发生动画效果
+            //声明变量
+            //鼠标点到哪个
+            var $x=$(this);
+            //索引，取出第x个（数组下标从0开始）
+            var $y=$x.index();
+            // 对第x个添加样式
+            $x.addClass("donghua");//用不了有问题
+            // $x.css({' animation': 'myself 3s'});
+            // $x.css({'background':'blue'});
+            setTimeout(function () {
+                $x.removeClass("donghua");
+            },1000);
+        })
+    })
+</script>
+</body>
+</html>
